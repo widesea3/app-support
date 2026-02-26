@@ -2,35 +2,82 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>App Support</title>
 <style>
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f5f5f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --card: #1c1c1e;
+  }
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
 }
-h1 { margin-bottom: 30px; }
-.app-link {
-    display: block;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
+
+.container {
+  max-width: 800px;
+  padding: 40px 20px;
 }
-.app-link:hover {
-    background-color: #f5f5f5;
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.app-card {
+  display: block;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: var(--text);
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.6;
 }
 </style>
 </head>
 <body>
+<div class="container">
+  <h1>App Support</h1>
 
-<h1>App Support</h1>
+  <a class="app-card" href="reversi/">
+    <h2>Reversi</h2>
+    <p>Classic strategy board game.</p>
+  </a>
 
-<a class="app-link" href="reversi/">Reversi</a>
-<a class="app-link" href="chainpuzzle/">Chain Puzzle</a>
+  <a class="app-card" href="chainpuzzle/">
+    <h2>Chain Puzzle</h2>
+    <p>Addictive chain reaction puzzle game.</p>
+  </a>
 
+  <div class="footer">
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</div>
 </body>
 </html>
