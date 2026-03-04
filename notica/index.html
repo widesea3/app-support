@@ -4,9 +4,104 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notica サポート</title>
-  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Noticaのサポートページです。よくある質問、問い合わせ先、プライバシーポリシーを掲載しています。">
+  <style>
+    :root {
+      --bg-start: #0b1632;
+      --bg-end: #050916;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #f5f7ff;
+      --muted: rgba(245, 247, 255, 0.78);
+      --line: rgba(255, 255, 255, 0.16);
+      --accent: #7fc3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: linear-gradient(170deg, var(--bg-start), var(--bg-end));
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(860px, 92vw);
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .top {
+      margin-bottom: 18px;
+    }
+
+    .meta {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(920px, 94vw);
+        padding: 20px 0 36px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: 14px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
 </head>
-<body> 
+<body>
   <main class="container">
     <section class="card top">
       <h1>Notica サポート</h1>
@@ -26,11 +121,7 @@
 
       <div>
         <h2>お問い合わせ</h2>
-        <p>ご質問・不具合報告は以下までご連絡ください。</p>
-        <p><strong>akitsan@birdsfam.com</strong></p>
-     
-        <a class="button" href="privacy.html">プライバシーポリシーを見る</a>
-
+        <p>不具合報告は、発生手順・端末機種・iOSバージョン・アプリバージョンを添えてご連絡ください。</p>
         <p>
           GitHub Issues:
           <a href="https://github.com/widesea3/notica/issues" target="_blank" rel="noopener noreferrer">
@@ -40,7 +131,7 @@
       </div>
 
       <div>
-        <h2>ポリシー</h2>
+        <h2>各種情報</h2>
         <p><a href="./privacy.html">プライバシーポリシー</a></p>
       </div>
     </section>
