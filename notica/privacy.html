@@ -4,7 +4,102 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Notica プライバシーポリシー</title>
-  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Noticaのプライバシーポリシーです。取得情報、利用目的、第三者提供について記載しています。">
+  <style>
+    :root {
+      --bg-start: #0b1632;
+      --bg-end: #050916;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #f5f7ff;
+      --muted: rgba(245, 247, 255, 0.78);
+      --line: rgba(255, 255, 255, 0.16);
+      --accent: #7fc3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: linear-gradient(170deg, var(--bg-start), var(--bg-end));
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(860px, 92vw);
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .top {
+      margin-bottom: 18px;
+    }
+
+    .meta {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(920px, 94vw);
+        padding: 20px 0 36px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: 14px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -60,4 +155,3 @@
   </main>
 </body>
 </html>
-
